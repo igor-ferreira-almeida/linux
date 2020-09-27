@@ -1,5 +1,32 @@
 # Linux
 
+## Instalação de programas
+
+### Instação pelo gerenciador de pacote 
+
+#### Debian/Ubuntu 
+
+Para instalar a última versão estável
+
+```
+apt-get install NOME_DO_PROGRAMA
+```
+
+Exemplo:
+```
+apt-get install git
+```
+
+
+### Instalando um programa .tar.gz
+
+Descompactando e copiando para a pasta padrão de programas instalados
+
+Exemplo:
+```
+tar -C /usr/local -xzf go1.15.2.linux-amd64.tar.gz
+```
+
 ## Variáveis de ambiente
 
 ### Ubuntu
