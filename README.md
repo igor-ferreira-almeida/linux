@@ -53,12 +53,16 @@ printenv
 Criar uma nova variável
 
 ```
-NOME_DA_VARIAVEL="/PATH/"
+vim /etc/profile
 ```
+
+Adicionar às variáveis de ambiente no PATH
 
 Exemplo:
 ```
-JAVA_HOME="/usr/lib/jvm/jdk-15/"
+export JAVA_HOME=/usr/lib/jvm/jdk-15/
+export GOROOT=/usr/local/go/
+export PATH=$PATH:$JAVA_HOME/bin:$GOROOT/bin
 ```
 
 Mostrar
@@ -80,22 +84,11 @@ printenv NOME_DA_VARIAVEL
 printenv JAVA_HOME
 ```
 
-Exportar para o PATH
-
-```
-export NOME_DA_VARIAVEL="/PATH/"
-export PATH=$PATH:$NOME_DA_VARIAVEL
-```
-
-Exemplo:
-```
-export JAVA_HOME="/usr/lib/jvm/jdk-15/"
-export PATH=$PATH:$JAVA_HOME/bin
-```
-
-Com isso, já é possível utilizar os comandos Java no terminal do Linux
+Com isso, já é possível utilizar os comandos Java e Go no terminal do Linux
 
 ```
 java -version
+
+go env
 ```
 
