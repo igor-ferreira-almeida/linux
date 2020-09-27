@@ -17,6 +17,19 @@ Exemplo:
 apt-get install git
 ```
 
+#### Fedora
+
+Para instalar a última versão estável
+
+```
+yum install NOME_DO_PROGRAMA
+```
+
+Exemplo:
+```
+yum install git
+```
+
 
 ### Instalando um programa .tar.gz
 
