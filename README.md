@@ -11,7 +11,7 @@ ls -l
 Por exemplo:
 
 ```
-drwxr-xr-x
+drwxr-xr-x proprietario grupo
 ```
 
 Primeiro caractere representa:
@@ -30,6 +30,11 @@ No exemplo anterior:
 Proprietário  Grupo   Outros
 rwx           r-x     r-x
 ```
+
+r = read (leitura)
+w = write (escrita)
+x = execution (execução)
+- = sem premissão
 
 O comando chmod (change mode)
 
