@@ -75,23 +75,16 @@ rwx
 
 Alguns exemplos: 
 
+```
 Para permissão de escrita, leitura e execução para o proprietário:
-
-```
 chmod 700 [nome_arquivo/diretório]
-```
 
-Para permissão de escrita, leitura e execução para o proprietário e grupo
-```
+Para permissão de escrita, leitura e execução para o proprietário e grupo:
 chmod 770 [nome_arquivo/diretório]
-```
 
 Para permissão de leitura para o proprietário e grupo:
-
-```
 chmod 400 [nome_arquivo/diretório]
 ```
-
 
 ## Instalação de programas
 
