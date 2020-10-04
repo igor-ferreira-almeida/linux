@@ -1,5 +1,44 @@
 # Linux
 
+## Permissões 
+
+Com o comando listar mais a flag l é possível ver as permissões de um determinado arquivo ou diretório:
+
+```
+ls -l 
+```
+
+Por exemplo:
+
+```
+drwxr-xr-x
+```
+
+Primeiro caractere representa:
+
+d = diretório
+- = arquivo comum de usuário
+c = arquivo de caratere
+b = arquivo de bloco
+l = link 
+
+Os demais caracteres representam as permissões de três conjuntos:
+
+No exemplo anterior: 
+
+```
+Proprietário  Grupo   Outros
+rwx           r-x     r-x
+```
+
+O comando chmod (change mode)
+
+```
+chmod [permissões] [nome_arquivo/diretório]
+```
+
+
+
 ## Instalação de programas
 
 ### Instação pelo gerenciador de pacote 
