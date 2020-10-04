@@ -16,11 +16,13 @@ drwxr-xr-x proprietario grupo
 
 Primeiro caractere representa:
 
+```
 d = diretório
 - = arquivo comum de usuário
 c = arquivo de caratere
 b = arquivo de bloco
 l = link 
+```
 
 Os demais caracteres representam as permissões de três conjuntos:
 
@@ -31,10 +33,13 @@ Proprietário  Grupo   Outros
 rwx           r-x     r-x
 ```
 
+```
 r = read (leitura)
 w = write (escrita)
 x = execution (execução)
 - = sem premissão
+```
+
 
 O comando chmod (change mode)
 
