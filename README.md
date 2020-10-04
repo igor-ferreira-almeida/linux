@@ -43,10 +43,54 @@ x = execution (execução)
 
 O comando chmod (change mode)
 
+Modo de permissão octal
+
+
 ```
-chmod [permissões] [nome_arquivo/diretório]
+chmod [permissões] [arquivo/diretório]
+
+Execução = 1
+Escrita = 2
+Leitura = 4
+
+rwx
+111		1 = ligado / 0 = desligado
+
+--x
+001 = 1
+
+-w-
+010	= 2
+
+r--
+100 = 4
+
+rw-
+110 = 4 + 2 = 6
+
+rwx
+111 = 4 + 2 + 1
+
 ```
 
+Alguns exemplos: 
+
+Para permissão de escrita, leitura e execução para o proprietário:
+
+```
+chmod 700 [nome_arquivo/diretório]
+```
+
+Para permissão de escrita, leitura e execução para o proprietário e grupo
+```
+chmod 770 [nome_arquivo/diretório]
+```
+
+Para permissão de leitura para o proprietário e grupo:
+
+```
+chmod 400 [nome_arquivo/diretório]
+```
 
 
 ## Instalação de programas
