@@ -1,5 +1,53 @@
 # Linux
 
+## Gerenciador de Pacotes
+
+### Debian
+
+#### Advanced Packaging Tool (APT)
+
+Software que permite o gerenciamento de pacotes de software em distribuições Linux Debian e suas variantes.
+
+Contém uma série de ferramentas usadas no gerenciamento dos pacotes, tais como o apt-get e o apt-cache.
+
+Para funcionar, o APT usa um arquivo que lista as "fontes" de onde ele obterá os pacotes. Esse arquivo é o /etc/apt/sources.list.
+
+Instalar um programa:
+
+```
+apt-get install tree
+```
+
+Apagar todos os pacotes baixados e já instalados: 
+
+```
+apt-get clean
+```
+
+Apagar pacotes que não podem ser mais baixados:
+
+```
+apt-get autoclean
+```
+
+Apagar pacotes órfãos (dependências de softwares já removidos):
+
+```
+apt-get autoclean
+```
+
+Apagar pacotes:
+
+```
+apt-get remove PACOTE
+```
+
+Remover pacotes e arquivos de configuração:
+
+```
+apt-get --purge remove PACOTE
+```
+
 ## Permissões 
 
 Com o comando listar mais a flag l é possível ver as permissões de um determinado arquivo ou diretório:
