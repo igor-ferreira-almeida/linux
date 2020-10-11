@@ -1,5 +1,87 @@
 # Linux
 
+## Comandos básicos
+
+### Mostrar o diretório atual (pwd - Print Working Directory)
+
+```
+pwd 
+```
+
+### Listar (ls - Listar)
+
+```
+ls
+```
+
+#### Mostrar descrição longa, por exemplo, permissões, usuário e grupo do arquivo, etc.
+
+```
+ls -l
+```
+
+#### Mostrar também os arquivos ocultos
+
+```
+ls -a
+```
+
+### Caracteres Coringas
+
+```
+texto1.txt
+texto2.txt
+texto10.txt
+texto100.txt
+teste.txt
+
+ls texto?.txt
+texto1.txt  texto2.txt
+
+ls texto*.txt
+texto1.txt  texto2.txt  texto10.txt texto100.txt
+
+ls *.txt
+texto1.txt  texto2.txt  texto10.txt texto100.txt  teste.txt
+
+```
+
+### Criar diretório (mkdir - Make Directory)
+
+```
+mkdir NOME_DIRETÓRIO 
+```
+
+### Apagar diretório (rmdir - Remove Directory)
+
+```
+rmdir NOME_DIRETÓRIO 
+```
+
+Obs.: O comando ***rmdir*** só apaga diretórios vazios, para apagar diretórios com conteúdo é preciso passar uma flag que significa recursivo: 
+
+```
+rmdir -r NOME_DIRETÓRIO 
+```
+
+### Criar arquivo vazios (touch - )
+
+```
+touch NOME_DO_ARQUIVO
+```
+
+### Apagar arquivo (rm - Remove)
+
+```
+rm NOME_DO_ARQUIVO
+```
+
+### Mostrar conteúdo de um arquivo (cat - Concatenar)
+
+```
+cat NOME_DO_ARQUIVO
+```
+
 ## Gerenciador de Pacotes
 
 ### Debian
