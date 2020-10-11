@@ -179,6 +179,41 @@ Para fazer uma leitura dinâmica com as setas do teclado:
 less NOME_DO_ARQUIVO
 ```
 
+## Editor de Texto (vi)
+
+```
+vi NOME_DO_ARQUIVO
+```
+
+```
+Setas para cima e para baixo: navegar
+i = insere caracter antes
+a = insere caracter depois
+A = insere no final da linha
+x = exclui caracter
+Número + x = por exemplo, 11x exclui 11 caracteres 
+dd = exclui a linha
+yy = copiar uma linha, pode ser usado com número de linhas assim como o excluir
+p = colar, pode ser usado com número de linhas
+esc = sair do modo edição
+:q = quit (sair) do editor
+:w = salvar
+:wq = salvar e sair do editor
+```
+
+### Navegação
+
+```
+1G = primeira linha
+0 = começo da linha
+$ = final da linha
+G = última linha
+/ = buscar palavra, apertando n é possível ir à próxima ocorrência
+```
+
+
+
+
 ## Gerenciador de Pacotes
 
 ### Debian
