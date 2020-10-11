@@ -55,31 +55,31 @@ mkdir NOME_DO_DIRETÓRIO
 ### Apagar diretório (rmdir - Remove Directory)
 
 ```
-rmdir NOME_DO_DIRETÓRIO 
+rm NOME_DO_DIRETÓRIO 
 ```
 
 Obs.: O comando ***rmdir*** só apaga diretórios vazios, para apagar diretórios com conteúdo é preciso passar uma flag que significa recursivo: 
 
 ```
-rmdir -r NOME_DO_DIRETÓRIO 
+rm -r NOME_DO_DIRETÓRIO 
 ```
 
 ### Copiar (cp - copy)
 
 ```
-copy NOME_DO_ARQUIVO ENDEREÇO_NOVO 
+cp NOME_DO_ARQUIVO ENDEREÇO_NOVO 
 ```
 
 #### Copiar com outro nome
 
 ```
-copy NOME_DO_ARQUIVO ENDEREÇO_NOVO/NOVO_NOME
+cp NOME_DO_ARQUIVO ENDEREÇO_NOVO/NOVO_NOME
 ```
 
 #### Copiar um diretório
 
 ```
-copy -r NOME_DO_DIRETÓRIO ENDEREÇO_NOVO/
+cp -r NOME_DO_DIRETÓRIO ENDEREÇO_NOVO/
 ```
 
 ### Mover (mv - move)
@@ -117,6 +117,66 @@ rm NOME_DO_ARQUIVO
 
 ```
 cat NOME_DO_ARQUIVO
+```
+
+### Compactação de Arquivos
+
+#### tar.gz
+
+Compactar um arquivo:
+
+Obs.: flag -c (create) e -z (gzip)
+
+```
+tar -cz NOME_DO_DIRETÓRIO > NOME_DO_ARQUIVO_COMPACTADO.tar.gz
+```
+
+```
+tar -czf NOME_DO_DIRETÓRIO NOME_DO_ARQUIVO_COMPACTADO.tar.gz
+```
+
+Descompactar um arquivo:
+
+Obs.: flag -x (extract)
+
+```
+tar -xz < NOME_DO_ARQUIVO_COMPACTADO.tar.gz
+```
+
+```
+tar -xzf NOME_DO_DIRETÓRIO
+```
+
+### Ler arquivos grandes pelo terminal
+
+Apenas as dez linhas do começo do arquivo:
+
+```
+head NOME_DO_ARQUIVO
+```
+
+Alterar o número de linhas, por exemplo, as três primeiras linhas do arquivo: 
+
+```
+head -n 3 NOME_DO_ARQUIVO
+```
+
+Ler apenas as dez linhas finais do arquivo:
+
+```
+tail NOME_DO_ARQUIVO
+```
+
+Obs.: Outrossim, pode usar a mesma flag de número de linhas:
+
+```
+tail -n 7 NOME_DO_ARQUIVO
+```
+
+Para fazer uma leitura dinâmica com as setas do teclado: 
+
+```
+less NOME_DO_ARQUIVO
 ```
 
 ## Gerenciador de Pacotes
