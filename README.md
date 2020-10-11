@@ -49,20 +49,57 @@ texto1.txt  texto2.txt  texto10.txt texto100.txt  teste.txt
 ### Criar diretório (mkdir - Make Directory)
 
 ```
-mkdir NOME_DIRETÓRIO 
+mkdir NOME_DO_DIRETÓRIO 
 ```
 
 ### Apagar diretório (rmdir - Remove Directory)
 
 ```
-rmdir NOME_DIRETÓRIO 
+rmdir NOME_DO_DIRETÓRIO 
 ```
 
 Obs.: O comando ***rmdir*** só apaga diretórios vazios, para apagar diretórios com conteúdo é preciso passar uma flag que significa recursivo: 
 
 ```
-rmdir -r NOME_DIRETÓRIO 
+rmdir -r NOME_DO_DIRETÓRIO 
 ```
+
+### Copiar (cp - copy)
+
+```
+copy NOME_DO_ARQUIVO ENDEREÇO_NOVO 
+```
+
+#### Copiar com outro nome
+
+```
+copy NOME_DO_ARQUIVO ENDEREÇO_NOVO/NOVO_NOME
+```
+
+#### Copiar um diretório
+
+```
+copy -r NOME_DO_DIRETÓRIO ENDEREÇO_NOVO/
+```
+
+### Mover (mv - move)
+
+```
+mv NOME_DO_ARQUIVO ENDEREÇO_NOVO 
+```
+
+#### Copiar com outro nome
+
+```
+mv NOME_DO_ARQUIVO ENDEREÇO_NOVO/NOVO_NOME
+```
+
+#### Copiar um diretório
+
+```
+mv -r NOME_DO_DIRETÓRIO ENDEREÇO_NOVO/
+```
+
 
 ### Criar arquivo vazios (touch - )
 
